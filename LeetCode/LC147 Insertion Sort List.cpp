@@ -67,20 +67,3 @@ public:
 		return ans->next;
 	}
 };
-
-int main()
-{
-	auto p1 = new ListNode(4);
-	auto p2 = new ListNode(2);
-	auto p3 = new ListNode(1);
-	auto p4 = new ListNode(3);
-
-	p1->next = p2;
-	p2->next = p3;
-	p3->next = p4;
-
-	Solution res;
-	auto ans = res.insertionSortList(p1);
-
-	return 0;
-}
