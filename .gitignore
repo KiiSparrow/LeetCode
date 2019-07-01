@@ -4,3 +4,6 @@ Debug
 
 # files
 .user
+*.user
+*.filters
+*.vcxproj
