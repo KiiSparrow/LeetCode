@@ -14,6 +14,9 @@ class Solution
 public:
 	int romanToInt(string s)
 	{
+		if (!s.size())
+			return 0;
+
 		int res = 0;
 		int numbers[26] = { 0 };
 
@@ -25,14 +28,9 @@ public:
 		numbers['D' - 'A'] = 500;
 		numbers['M' - 'A'] = 1000;
 
-		for (int i = s.length() - 1; i >= 0; --i)
+		res = numbers[s[s.length() - 1] - 'A'];
+		for (int i = s.length() - 2; i >= 0; --i)
 		{
-			if (i == s.length() - 1)
-			{
-				res = numbers[s[i] - 'A'];
-				continue;
-			}
-
 			if (numbers[s[i] - 'A'] < numbers[s[i + 1] - 'A'])
 				res -= numbers[s[i] - 'A'];
 			else
