@@ -14,28 +14,35 @@ class Solution
 public:
 	vector<int> grayCode(int n)
 	{
-		int m = pow(2, n);
-		vector<vector<int>> binCode(m, vector<int>(n, 0));
+		int len = pow(2, n);
+		vector<int> ans(len, 0);
+		vector<vector<int>> bin{ {0}, {1} };
 
-		for (int i = 0; i < n; ++i)
+		for (int i = 1; i < n; ++i)
 		{
-			for (int j = 0; j < m; j += 2 * (i + 1))
+			int m = pow(2, i);
+			for (int j = m - 1; j >= 0; --j)
 			{
-				int k = i + 1;
-				while (k--)
-				{
-					binCode[j][i] = 1;
-					++j;
-				}
+				auto temp = bin[j];
+				bin.push_back(temp);
+			}
+
+			int j;
+			for (j = 0; j < m; ++j)
+			{
+				bin[j].push_back(0);
+			}
+			for (; j < 2 * m; ++j)
+			{
+				bin[j].push_back(1);
 			}
 		}
-
-		vector<int> ans(m, 0);
-		for (int i = 0; i < m; ++i)
+		
+		for (int i = 0; i < len; ++i)
 		{
 			for (int j = 0; j < n; ++j)
 			{
-				ans[i] += pow(2, j) * binCode[i][j];
+				ans[i] += pow(2, j) * bin[i][j];
 			}
 		}
 
