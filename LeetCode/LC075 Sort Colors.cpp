@@ -12,12 +12,6 @@ static const auto ioSyncOff = []()
 class Solution
 {
 public:
-	Solution()
-	{
-		ios::sync_with_stdio(false);
-		cin.tie(nullptr);
-	}
-
 	void sortColors(vector<int>& nums)
 	{
 		int left = 0;
