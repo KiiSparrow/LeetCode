@@ -29,7 +29,7 @@ public:
 
 				ans += (cur - st.top() - 1) * (min(height[st.top()], height[cur]) - height[bot]);
 			}
-			st.push(cur);
+			st.push(cur++);
 		}
 
 
