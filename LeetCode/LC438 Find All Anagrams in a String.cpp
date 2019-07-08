@@ -15,17 +15,37 @@ public:
 	vector<int> findAnagrams(string s, string p)
 	{
 		vector<int> ans;
+		string pcode(26, 'a' - 1);
+		string scode(26, 'a' - 1);
+
+		for (auto c : p)
+		{
+			++pcode[c - 'a'];
+		}
+
 		int slen = s.size();
 		int plen = p.size();
-		sort(p.begin(), p.end());
 
-		for (int i = 0; i < slen - plen + 1; ++i)
+		if (slen < plen)
+			return {};
+
+		for (int i = 0; i < plen; ++i)
 		{
-			string temp(s, i, plen);
-			sort(temp.begin(), temp.end());
+			++scode[s[i] - 'a'];
+		}
+		if (scode == pcode)
+			ans.push_back(0);
 
-			if (temp == p)
-				ans.push_back(i);
+		int left = 0;
+		int right = plen;
+
+		for (; right < slen; ++right)
+		{			
+			++scode[s[right - 'a']];
+			--scode[s[left - 'a']];
+			++left;
+			if (scode == pcode)
+				ans.push_back(left);
 		}
 		
 		return ans;
