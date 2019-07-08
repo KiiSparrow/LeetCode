@@ -34,7 +34,7 @@ public:
 		if (!root)
 			return;
 
-		DFSSum(root, root->val, sum, ans);
+		DFSSum(root, 0, sum, ans);
 
 		DFS(root->left, sum, ans);
 		DFS(root->right, sum, ans);
