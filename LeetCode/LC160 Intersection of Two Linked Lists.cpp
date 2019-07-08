@@ -27,8 +27,8 @@ public:
 
 		while (pa != pb)
 		{
-			pa = (pa->next ? pa->next : headB);
-			pb = (pb->next ? pb->next : headA);
+			pa = (pa ? pa->next : headB);
+			pb = (pb ? pb->next : headA);
 		}
 
 		return pa;
