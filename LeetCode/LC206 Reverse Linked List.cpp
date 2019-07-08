@@ -22,6 +22,17 @@ class Solution
 public:
 	ListNode* reverseList(ListNode* head)
 	{
+		ListNode* ans = nullptr;
+		ListNode* cur = head;
 
+		while (cur)
+		{
+			head = head->next;
+			cur->next = ans;
+			ans = cur;
+			cur = head;
+		}
+
+		return ans;
 	}
 };
