@@ -23,6 +23,36 @@ class Solution
 public:
 	int pathSum(TreeNode* root, int sum)
 	{
+		vector<int> path;
+		return subSum(root, path, sum);
+	}
+
+	int subSum(TreeNode* root, vector<int>& path, int sum)
+	{
+		if (!root)
+			return 0;
+
+		path.push_back(root->val);
+
+		int ans = 0;
+		int re = 0;
+		for (int i = path.size() - 1; i >= 0; --i)
+		{
+			re += path[i];
+			if (re == sum)
+				++ans;
+		}
+
+		int childAns = subSum(root->left, path, sum) + subSum(root->right, path, sum);
+
+		path.pop_back();
+
+		return ans + childAns;
+	}
+
+	/*
+	int pathSum(TreeNode* root, int sum)
+	{
 		int ans = 0;
 		DFS(root, sum, ans);
 
@@ -52,4 +82,5 @@ public:
 		DFSSum(root->left, cur, sum, ans);
 		DFSSum(root->right, cur, sum, ans);
 	}
+	*/
 };
