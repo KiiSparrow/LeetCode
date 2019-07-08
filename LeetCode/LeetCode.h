@@ -16,6 +16,7 @@
 
 #include <algorithm>
 #include <numeric>
+#include <bitset>
 
 
 /*Struct*/
