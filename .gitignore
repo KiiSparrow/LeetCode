@@ -1,10 +1,2 @@
-# dic
-.vs
 Debug
-
-# files
-.user
-*.user
-*.filters
-*.vcxproj
-*.sln
+.vs
