@@ -23,6 +23,33 @@ class Solution
 public:
 	int pathSum(TreeNode* root, int sum)
 	{
+		int ans = 0;
+		DFS(root, sum, ans);
 
+		return ans;
+	}
+
+	void DFS(TreeNode* root, int sum, int& ans)
+	{
+		if (!root)
+			return;
+
+		DFSSum(root, root->val, sum, ans);
+
+		DFS(root->left, sum, ans);
+		DFS(root->right, sum, ans);
+	}
+
+	void DFSSum(TreeNode* root, int cur,int sum, int& ans)
+	{
+		if (!root)
+			return;
+
+		cur += root->val;
+		if (cur == sum)
+			++ans;
+
+		DFSSum(root->left, cur, sum, ans);
+		DFSSum(root->right, cur, sum, ans);
 	}
 };
