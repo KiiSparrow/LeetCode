@@ -444,6 +444,14 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC160 Intersection of Two Linked Lists.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC169 Majority Element.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC188 Best Time to Buy and Sell Stock IV.cpp">
       <SubType>
       </SubType>
@@ -464,7 +472,19 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC226 Invert Binary Tree.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC234 Palindrome Linked List.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC237 Delete Node in a Linked List.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC238 Move Zeroes.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -480,11 +500,23 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC437 Path Sum III.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC438 Find All Anagrams in a String.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC617 Merge Two Binary Trees.cpp">
       <SubType>
       </SubType>
     </ClCompile>
     <ClCompile Include="LC746 Min Cost Climbing Stairs.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC870 Advantage Shuffle.cpp">
       <SubType>
       </SubType>
     </ClCompile>
