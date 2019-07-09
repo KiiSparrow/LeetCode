@@ -53,8 +53,12 @@ public:
 			}
 			else
 			{
-
+				B[newB[leftB].index] = A[leftA];
+				++leftA;
+				++leftB;
 			}
 		}
+
+		return B;
 	}
 };
