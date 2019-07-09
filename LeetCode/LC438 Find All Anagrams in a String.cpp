@@ -14,21 +14,19 @@ class Solution
 public:
 	vector<int> findAnagrams(string s, string p)
 	{
+		int slen = s.size();
+		int plen = p.size();
+		if (slen < plen)
+			return {};
+
 		vector<int> ans;
-		string pcode(26, 'a' - 1);
-		string scode(26, 'a' - 1);
+		vector<int> pcode(26, 0);
+		vector<int> scode(26, 0);
 
 		for (auto c : p)
 		{
 			++pcode[c - 'a'];
 		}
-
-		int slen = s.size();
-		int plen = p.size();
-
-		if (slen < plen)
-			return {};
-
 		for (int i = 0; i < plen; ++i)
 		{
 			++scode[s[i] - 'a'];
@@ -41,8 +39,8 @@ public:
 
 		for (; right < slen; ++right)
 		{			
-			++scode[s[right - 'a']];
-			--scode[s[left - 'a']];
+			++scode[s[right] - 'a'];
+			--scode[s[left] - 'a'];
 			++left;
 			if (scode == pcode)
 				ans.push_back(left);
