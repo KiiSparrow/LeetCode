@@ -302,6 +302,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC066 Plus One.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC070 Climbing Stairs.cpp">
       <SubType>
       </SubType>
@@ -492,6 +496,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC287 Find the Duplicate Number.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC300 Longest Increasing Subsequence.cpp">
       <SubType>
       </SubType>
@@ -505,6 +513,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="LC438 Find All Anagrams in a String.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC448 Find All Numbers Disappeared in an Array.cpp">
       <SubType>
       </SubType>
     </ClCompile>

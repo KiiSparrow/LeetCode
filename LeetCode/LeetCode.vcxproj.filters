@@ -321,6 +321,15 @@
     <ClCompile Include="LC870 Advantage Shuffle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC448 Find All Numbers Disappeared in an Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC287 Find the Duplicate Number.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC066 Plus One.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LeetCode.h">
