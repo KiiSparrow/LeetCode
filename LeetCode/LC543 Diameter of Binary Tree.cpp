@@ -23,10 +23,13 @@ class Solution
 public:
 	int diameterOfBinaryTree(TreeNode* root)
 	{
+		if (!root)
+			return 0;
+
 		int ans = 0;
 		path(root, ans);
 
-		return ans;
+		return ans - 1;
 	}
 
 	int path(TreeNode* root, int& dia)
