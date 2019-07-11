@@ -200,6 +200,10 @@
     <ClCompile Include="LC142 Linked List Cycle II.cpp" />
     <ClCompile Include="LC144 Binary Tree Preorder Traversal.cpp" />
     <ClCompile Include="LC145 Binary Tree Postorder Traversal.cpp" />
+    <ClCompile Include="LC146 LRU Cache.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC147 Insertion Sort List.cpp" />
     <ClCompile Include="LC148 Sort List.cpp" />
     <ClCompile Include="LC149 Max Points on a Line.cpp" />
@@ -216,6 +220,10 @@
     <ClCompile Include="LC234 Palindrome Linked List.cpp" />
     <ClCompile Include="LC237 Delete Node in a Linked List.cpp" />
     <ClCompile Include="LC238 Move Zeroes.cpp" />
+    <ClCompile Include="LC252 Meeting Rooms.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC279 Perfect Squares.cpp" />
     <ClCompile Include="LC287 Find the Duplicate Number.cpp" />
     <ClCompile Include="LC300 Longest Increasing Subsequence.cpp" />
@@ -225,6 +233,18 @@
     <ClCompile Include="LC442 Find All Duplicates in an Array.cpp" />
     <ClCompile Include="LC448 Find All Numbers Disappeared in an Array.cpp" />
     <ClCompile Include="LC461 Hamming Distance.cpp" />
+    <ClCompile Include="LC538 Convert BST to Greater Tree.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC543 Diameter of Binary Tree.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC581 Shortest Unsorted Continuous Subarray.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC617 Merge Two Binary Trees.cpp" />
     <ClCompile Include="LC746 Min Cost Climbing Stairs.cpp" />
     <ClCompile Include="LC870 Advantage Shuffle.cpp" />
