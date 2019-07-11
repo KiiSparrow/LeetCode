@@ -214,12 +214,24 @@
     <ClCompile Include="LC188 Best Time to Buy and Sell Stock IV.cpp" />
     <ClCompile Include="LC189 Rotate Array.cpp" />
     <ClCompile Include="LC198 House Robber.cpp" />
+    <ClCompile Include="LC200 Number of Islands.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC206 Reverse Linked List.cpp" />
+    <ClCompile Include="LC215 Kth Largest Element in an Array.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC221 Maximal Square.cpp" />
     <ClCompile Include="LC226 Invert Binary Tree.cpp" />
     <ClCompile Include="LC234 Palindrome Linked List.cpp" />
     <ClCompile Include="LC237 Delete Node in a Linked List.cpp" />
     <ClCompile Include="LC238 Move Zeroes.cpp" />
+    <ClCompile Include="LC240 Search a 2D Matrix II.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC252 Meeting Rooms.cpp">
       <SubType>
       </SubType>
