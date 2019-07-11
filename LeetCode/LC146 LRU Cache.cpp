@@ -26,6 +26,7 @@ public:
 			return -1;
 
 		CacheNode* cur = cache[key];
+
 		if (top->next == nullptr)
 			return cur->val;
 
