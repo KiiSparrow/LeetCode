@@ -224,8 +224,16 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC253 Meeting Rooms II.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC279 Perfect Squares.cpp" />
     <ClCompile Include="LC287 Find the Duplicate Number.cpp" />
+    <ClCompile Include="LC295 Find Median from Data Stream.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC300 Longest Increasing Subsequence.cpp" />
     <ClCompile Include="LC303 Range Sum Query - Immutable.cpp" />
     <ClCompile Include="LC437 Path Sum III.cpp" />
