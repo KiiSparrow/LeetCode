@@ -11,63 +11,53 @@ static const auto ioSyncOff = []()
 
 class LRUCache
 {
+private:
+	int cap;
+	list<pair<int, int>> cache;
+	unordered_map<int, decltype(cache)::iterator> kv;
+
 public:
 	LRUCache(int capacity)
 	{
 		cap = capacity;
-		cur = 0;
-		top = nullptr;
-		end = nullptr;
 	}
 
 	int get(int key)
 	{
-		if (false)
+		auto res = kv.find(key);
+		if (res == kv.end())
 			return -1;
 
-		CacheNode* cur = cache[key];
+		auto cur = *kv[key];
 
-		if (top->next == nullptr)
-			return cur->val;
+		cache.erase(kv[key]);
+		cache.push_front(cur);
+		kv[key] = cache.begin();
 
-		if (cur == top)
-		{
-			top = top->next;
-			top->pre = nullptr;
-		}
-		else
-		{
-			cur->pre->next = cur->next;
-			cur->next->pre = cur->pre;
-		}
-
-		cur->pre = end;
-		end->next = cur;
-
-		cur->next = nullptr;
-		end = cur;
-
-		return cur->val;
+		return cur.second;
 	}
 
 	void put(int key, int value)
 	{
-
+		auto cur = kv.find(key);
+		if (cur == kv.end())
+		{
+			if (cache.size() == cap)
+			{
+				auto last = cache.back();
+				kv.erase(last.first);
+				cache.pop_back();
+			}
+			cache.push_front(make_pair(key, value));
+			kv[key] = cache.begin();
+		}
+		else
+		{
+			cache.erase(kv[key]);
+			cache.push_front(pair<int, int>(key, value));
+			kv[key] = cache.begin();
+		}
 	}
-private:
-	struct CacheNode
-	{
-		int val;
-		CacheNode* pre;
-		CacheNode* next;
-		CacheNode(int _val) :val(_val), pre(nullptr), next(nullptr) { }
-	};
-	CacheNode* top;
-	CacheNode* end;
-
-	unordered_map<int, CacheNode*> cache;
-	int cap;
-	int cur;
 };
 
 /**
