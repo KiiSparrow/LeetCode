@@ -341,5 +341,20 @@
     <ClCompile Include="LC938 Range Sum of BST.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC538 Convert BST to Greater Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC543 Diameter of Binary Tree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC581 Shortest Unsorted Continuous Subarray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC146 LRU Cache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC252 Meeting Rooms.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
