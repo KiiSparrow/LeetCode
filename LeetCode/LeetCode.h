@@ -24,9 +24,7 @@ struct ListNode
 {
 	int val;
 	ListNode *next;
-	ListNode(int x) : val(x), next(NULL)
-	{
-	}
+	ListNode(int x) : val(x), next(NULL){ }
 };
 
 struct TreeNode
@@ -34,9 +32,7 @@ struct TreeNode
 	int val;
 	TreeNode *left;
 	TreeNode *right;
-	TreeNode(int x) : val(x), left(NULL), right(NULL)
-	{
-	}
+	TreeNode(int x) : val(x), left(NULL), right(NULL){ }
 };
 
 class Node
@@ -47,10 +43,7 @@ public:
 	Node* right;
 	Node* next;
 
-	Node()
-	{
-	}
-
+	Node(){ }
 	Node(int _val, Node* _left, Node* _right, Node* _next)
 	{
 		val = _val;
