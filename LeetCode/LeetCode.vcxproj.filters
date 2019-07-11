@@ -356,5 +356,11 @@
     <ClCompile Include="LC252 Meeting Rooms.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC253 Meeting Rooms II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC295 Find Median from Data Stream.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
