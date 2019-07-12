@@ -374,5 +374,8 @@
     <ClCompile Include="LC236 Lowest Common Ancestor of a Binary Tree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC322 Coin Change.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

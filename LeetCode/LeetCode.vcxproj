@@ -249,6 +249,10 @@
     </ClCompile>
     <ClCompile Include="LC300 Longest Increasing Subsequence.cpp" />
     <ClCompile Include="LC303 Range Sum Query - Immutable.cpp" />
+    <ClCompile Include="LC322 Coin Change.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC437 Path Sum III.cpp" />
     <ClCompile Include="LC438 Find All Anagrams in a String.cpp" />
     <ClCompile Include="LC442 Find All Duplicates in an Array.cpp" />
