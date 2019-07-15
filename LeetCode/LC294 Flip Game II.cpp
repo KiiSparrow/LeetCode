@@ -31,7 +31,7 @@ public:
 				cnt = 0;
 			}
 		}
-
+		
 		vector<int> g(maxLen + 1, 0);
 		for (int len = 2; len <= maxLen; ++len)
 		{
