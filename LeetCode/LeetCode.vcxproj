@@ -265,6 +265,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC375 Guess Number Higher or Lower II.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC416 Partition Equal Subset Sum.cpp">
       <SubType>
       </SubType>
@@ -297,6 +301,10 @@
     <ClCompile Include="LC617 Merge Two Binary Trees.cpp" />
     <ClCompile Include="LC746 Min Cost Climbing Stairs.cpp" />
     <ClCompile Include="LC870 Advantage Shuffle.cpp" />
+    <ClCompile Include="LC877 Stone Game.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC938 Range Sum of BST.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

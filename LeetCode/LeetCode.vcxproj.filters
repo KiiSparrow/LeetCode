@@ -395,5 +395,11 @@
     <ClCompile Include="LC294 Flip Game II.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC877 Stone Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC375 Guess Number Higher or Lower II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
