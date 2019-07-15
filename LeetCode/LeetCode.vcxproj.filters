@@ -377,5 +377,23 @@
     <ClCompile Include="LC322 Coin Change.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="LC416 Partition Equal Subset Sum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC292 Nim Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC293 Flip Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC486 Predict the Winner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC464 Can I Win.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LC294 Flip Game II.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

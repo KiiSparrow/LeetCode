@@ -21,8 +21,8 @@ public:
 		{
 			if (s.substr(i, 2) == "++")
 			{
-				string tmp(s);
-				ans.push_back(tmp.replace(i, 2, "--"));
+				ans.push_back(s.replace(i, 2, "--"));
+				s.replace(i, 2, "++");
 			}
 		}
 

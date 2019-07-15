@@ -243,6 +243,18 @@
     </ClCompile>
     <ClCompile Include="LC279 Perfect Squares.cpp" />
     <ClCompile Include="LC287 Find the Duplicate Number.cpp" />
+    <ClCompile Include="LC292 Nim Game.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC293 Flip Game.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC294 Flip Game II.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC295 Find Median from Data Stream.cpp">
       <SubType>
       </SubType>
@@ -253,11 +265,23 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC416 Partition Equal Subset Sum.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC437 Path Sum III.cpp" />
     <ClCompile Include="LC438 Find All Anagrams in a String.cpp" />
     <ClCompile Include="LC442 Find All Duplicates in an Array.cpp" />
     <ClCompile Include="LC448 Find All Numbers Disappeared in an Array.cpp" />
     <ClCompile Include="LC461 Hamming Distance.cpp" />
+    <ClCompile Include="LC464 Can I Win.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC486 Predict the Winner.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC538 Convert BST to Greater Tree.cpp">
       <SubType>
       </SubType>

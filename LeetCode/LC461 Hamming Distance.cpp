@@ -27,10 +27,3 @@ public:
 		return ans;
 	}
 };
-
-int main()
-{
-	Solution::hammingDistance(1, 4);
-
-	return 0;
-}
