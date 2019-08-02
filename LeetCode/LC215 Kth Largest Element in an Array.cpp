@@ -30,14 +30,14 @@ public:
 		}
 		else if (p < kSmall)
 		{
-			quickSelect(nums, p + 1, right, kSmall);
+			return quickSelect(nums, p + 1, right, kSmall);
 		}
 		else
 		{
-			quickSelect(nums, left, p - 1, kSmall);
+			return quickSelect(nums, left, p - 1, kSmall);
 		}
 
-		return nums[p];
+		return -1;
 	}
 
 	int partition(vector<int>& nums, int left, int right)
@@ -46,7 +46,7 @@ public:
 		int j = right;
 
 		int p = left + rand() % (right - left);
-		swap(nums[i], nums[p]);
+		swap(nums[left], nums[p]);
 		while (i < j)
 		{
 			while (i < j && nums[j] >= nums[left])

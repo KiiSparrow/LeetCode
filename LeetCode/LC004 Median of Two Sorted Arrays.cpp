@@ -12,6 +12,56 @@ static const auto ioSyncOff = []()
 class Solution
 {
 public:
+	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2)
+	{
+		auto A = nums1;
+		auto B = nums2;
+		if (A.size() > B.size())
+			swap(A, B);
+
+		int left = 0;
+		int right = A.size();
+		int halfLen = (A.size() + B.size() + 1) / 2;
+
+		while (left <= right)
+		{
+			int i = (left + right) / 2;
+			int j = halfLen - i;
+
+			if (i < right && B[j - 1] > A[i])
+				left = i + 1;
+			else if (i > left && A[i - 1] > B[j])
+				right = i - 1;
+			else
+			{
+				int maxLeft = 0;
+				if (i == 0)
+					maxLeft = B[j - 1];
+				else if (j == 0)
+					maxLeft = A[i - 1];
+				else
+					maxLeft = max(A[i - 1], B[j - 1]);
+				if ((A.size() + B.size()) % 2)
+					return maxLeft;
+
+				int minRight = 0;
+				if (i == A.size())
+					minRight = B[j];
+				else if (j == B.size())
+					minRight = A[i];
+				else
+					minRight = min(A[i], B[j]);
+				
+				return (double)(maxLeft + minRight) / 2;
+
+			}
+		}
+	}
+};
+
+class Solution2
+{
+public:
 	void findMid(int begin, int end, vector<int>& mid)
 	{
 		mid[0] = (end + begin) / 2;
@@ -47,7 +97,7 @@ public:
 
 		findMid(b1, e1, mid1);
 		findMid(b2, e2, mid2);
-		int cut = (e1 - b1) < (e2 - b2) ? (e1 - b1) / 2 : (e2 - b2) / 2;
+		int cut = (e1 - b1) / 2;
 
 		while (cut)
 		{

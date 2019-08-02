@@ -144,6 +144,14 @@
     <ClCompile Include="LC021 Merge Two Sorted Lists.cpp" />
     <ClCompile Include="LC022 Generate Parentheses.cpp" />
     <ClCompile Include="LC023 Merge k Sorted Lists.cpp" />
+    <ClCompile Include="LC024 Swap Nodes in Pairs.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC025 Reverse Nodes in k-Group.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC026 Remove Duplicates from Sorted Array.cpp" />
     <ClCompile Include="LC027 Remove Element.cpp" />
     <ClCompile Include="LC028 Implement strStr().cpp" />
@@ -164,15 +172,35 @@
     <ClCompile Include="LC055 Jump Game.cpp" />
     <ClCompile Include="LC056 Merge Intervals.cpp" />
     <ClCompile Include="LC058 Length of Last Word.cpp" />
+    <ClCompile Include="LC061 Rotate List.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC062 Unique Paths.cpp" />
     <ClCompile Include="LC063 Unique Paths II.cpp" />
     <ClCompile Include="LC064 Minimum Path Sum.cpp" />
     <ClCompile Include="LC066 Plus One.cpp" />
     <ClCompile Include="LC070 Climbing Stairs.cpp" />
+    <ClCompile Include="LC072 Edit Distance.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC074 Search a 2D Matrix.cpp" />
     <ClCompile Include="LC075 Sort Colors.cpp" />
+    <ClCompile Include="LC076 Minimum Window Substring.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC078 Subsets.cpp" />
     <ClCompile Include="LC079 Word Search.cpp" />
+    <ClCompile Include="LC084 Largest Rectangle in Histogram.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC085 Maximal Rectangle.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC088 Merge Sorted Array.cpp" />
     <ClCompile Include="LC089 Gray Code.cpp" />
     <ClCompile Include="LC091 Decode Ways.cpp" />
@@ -192,6 +220,10 @@
     <ClCompile Include="LC122 Best Time to Buy and Sell Stock II.cpp" />
     <ClCompile Include="LC123 Best Time to Buy and Sell Stock III.cpp" />
     <ClCompile Include="LC124 Binary Tree Maximum Path Sum.cpp" />
+    <ClCompile Include="LC128 Longest Consecutive Sequence.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC129 Sum Root to Leaf Numbers.cpp" />
     <ClCompile Include="LC136 Single Number.cpp" />
     <ClCompile Include="LC137 Single Number II.cpp" />
@@ -219,6 +251,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="LC206 Reverse Linked List.cpp" />
+    <ClCompile Include="LC208 Implement Trie (Prefix Tree).cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC215 Kth Largest Element in an Array.cpp">
       <SubType>
       </SubType>
@@ -259,13 +295,29 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC297 Serialize and Deserialize Binary Tree.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC300 Longest Increasing Subsequence.cpp" />
     <ClCompile Include="LC303 Range Sum Query - Immutable.cpp" />
     <ClCompile Include="LC322 Coin Change.cpp">
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="LC337 House Robber III.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC338 Counting Bits.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="LC375 Guess Number Higher or Lower II.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC394 Decode String.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -291,6 +343,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="LC543 Diameter of Binary Tree.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LC560 Subarray Sum Equals K.cpp">
       <SubType>
       </SubType>
     </ClCompile>
